@@ -12,6 +12,8 @@ import ExperienceSection from "./components/ExperienceSection";
 import FeaturedCars from "./components/FeaturedCars";
 import CarListPage from "./components/CarListPage";
 import Rented from "./components/Rented";
+import Login from "./components/Login";
+import Signup from "./components/Signup"; // Import the Signup component
 
 function App() {
   return (
@@ -38,6 +40,10 @@ function App() {
             <Route path="/cars" element={<CarListPage />} />
             {/* Rented Cars Route */}
             <Route path="/rented" element={<Rented />} />
+            {/* Login Route */}
+            <Route path="/login" element={<Login />} />
+            {/* Signup Route */}
+            <Route path="/signup" element={<Signup />} /> {/* Add Signup route here */}
           </Routes>
           <Footer />
         </div>
