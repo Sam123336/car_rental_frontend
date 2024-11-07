@@ -7,6 +7,7 @@ import Lamborghini from "./images/Lamborghini.png";
 import Jeep from "./images/jeep.png";
 import Ford from "./images/ford.png";
 import Nissan from "./images/nisaan.png";
+import { baseUrl } from '../url';
 
 function ReservationForm({ onClose }) {
   const [email, setEmail] = useState('');
@@ -43,7 +44,7 @@ function ReservationForm({ onClose }) {
 
       // Send confirmation email
       try {
-        const response = await fetch('http://localhost:5000/send-email', {
+        const response = await fetch(`${baseUrl}/send-email`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

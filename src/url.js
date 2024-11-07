@@ -1,0 +1,1 @@
+export const baseUrl = `https://carrentalsystembackend-1.onrender.com`;
