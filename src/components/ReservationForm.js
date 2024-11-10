@@ -34,41 +34,19 @@ function ReservationForm({ onClose }) {
     const reservedCar = availableCars.find(car => car.name === selectedCar);
 
     if (reservedCar) {
-      // Add rented car to context with consistent `image` property
       addRentedCar({
         name: reservedCar.name,
-        rentalDate: new Date().toISOString().split('T')[0], // today's date
+        rentalDate: new Date().toISOString().split('T')[0],
         cost: reservedCar.cost,
-        image: reservedCar.imgSrc // Use `image` key instead of `imgSrc`
+        image: reservedCar.imgSrc
       });
 
-      // Send confirmation email
-      try {
-        const response = await fetch(`${baseUrl}/send-email`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            to: email,
-            subject: `Reservation Confirmation for ${firstName}`,
-            text: `Thank you for reserving a ${reservedCar.name} with us. Check your email for details.`
-          })
-        });
-
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-
-        const result = await response.json();
-        console.log('Email Preview URL:', result.previewUrl); // Log the preview URL if needed
-
-        alert(`Reservation for ${reservedCar.name} confirmed. Check your email for confirmation.`);
-      } catch (error) {
-        console.error('Error sending email:', error);
-        alert('Failed to send confirmation email. Please try again.');
-      }
+      alert(`Reservation for ${reservedCar.name} confirmed!`);
     }
 
     onClose();
+      // Send confirmation email
+  
   };
 
   return (
