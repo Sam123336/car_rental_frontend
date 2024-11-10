@@ -29,6 +29,12 @@ function IconSection() {
     { name: 'Brand 4', image: car},
     { name: 'Brand 2', image: Cadillac },
     { name: 'Brand 3', image: Lamborghini },
+    { name: 'Brand 4', image: car},
+    { name: 'Brand 2', image: Cadillac },
+    { name: 'Brand 3', image: Lamborghini },
+    { name: 'Brand 4', image: car},
+    { name: 'Brand 2', image: Cadillac },
+    { name: 'Brand 3', image: Lamborghini },
   
     { name: 'Brand 2', image: Cadillac },
     { name: 'Brand 3', image: Lamborghini },
