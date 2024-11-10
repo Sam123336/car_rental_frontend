@@ -8,16 +8,16 @@ import nisaan from "./images/nisaan.png";
 
 function FeaturedCars() {
   const cars = [
-    { name: "SUV", price: "$70/day", image: BMW, description: "A spacious SUV with excellent fuel efficiency." },
-    { name: "Cadillac", price: "$80/day", image: Cadillac, description: "Luxury and comfort with a smooth drive." },
-    { name: "Lamborghini", price: "$120/day", image: Lamborghini, description: "High performance and sleek design." },
-    { name: "Jeep", price: "$77/day", image: jeep, description: "Rugged and reliable, perfect for off-road adventures." },
-    { name: "Ford", price: "$89/day", image: ford, description: "A powerful car with modern features." },
-    { name: "Dodge", price: "$99/day", image: nisaan, description: "Sporty and fast with advanced safety features." },
-    { name: "BMW", price: "$110/day", image: "https://example.com/bmw.jpg", description: "Stylish and smooth with luxury features." },
-    { name: "Audi", price: "$115/day", image: "https://example.com/audi.jpg", description: "German engineering with powerful performance." },
-    { name: "Mercedes", price: "$130/day", image: "https://example.com/mercedes.jpg", description: "Classy and refined, ideal for luxury travel." },
-    { name: "Tesla", price: "$140/day", image: "https://example.com/tesla.jpg", description: "Electric and environmentally friendly." }
+    { name: "SUV", price: "Rs.70,000/day", image: BMW, description: "A spacious SUV with excellent fuel efficiency." },
+    { name: "Cadillac", price: "Rs.80,000/day", image: Cadillac, description: "Luxury and comfort with a smooth drive." },
+    { name: "Lamborghini", price: "Rs.120,000/day", image: Lamborghini, description: "High performance and sleek design." },
+    { name: "Jeep", price: "Rs.77,000/day", image: jeep, description: "Rugged and reliable, perfect for off-road adventures." },
+    { name: "Ford", price: "Rs.89,000/day", image: ford, description: "A powerful car with modern features." },
+    { name: "Dodge", price: "Rs.99,000/day", image: nisaan, description: "Sporty and fast with advanced safety features." },
+    { name: "BMW", price: "Rs.110,000/day", image: "https://example.com/bmw.jpg", description: "Stylish and smooth with luxury features." },
+    { name: "Audi", price: "Rs.115,000/day", image: "https://example.com/audi.jpg", description: "German engineering with powerful performance." },
+    { name: "Mercedes", price: "Rs.130,000/day", image: "https://example.com/mercedes.jpg", description: "Classy and refined, ideal for luxury travel." },
+    { name: "Tesla", price: "Rs.140,000/day", image: "https://example.com/tesla.jpg", description: "Electric and environmentally friendly." }
   ];
 
   const initialVisibleCars = 6;

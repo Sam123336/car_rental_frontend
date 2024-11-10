@@ -17,12 +17,12 @@ function CarListPage() {
   const [dropOffLocation, setDropOffLocation] = useState("");
 
   const carData = [
-    { id: 1, name: "BMW", price: "$70 / Day", type: "Sedan", doors: 4, seats: 4, ac: true, image: BMW },
-    { id: 2, name: "Cadillac", price: "$80 / Day", type: "SUV", doors: 4, seats: 5, ac: true, image: Cadillac },
-    { id: 3, name: "Lamborghini", price: "$120 / Day", type: "Convertible", doors: 2, seats: 2, ac: true, image: Lamborghini },
-    { id: 4, name: "Jeep", price: "$77 / Day", type: "SUV", doors: 4, seats: 6, ac: true, image: jeep },
-    { id: 5, name: "Ford", price: "$89 / Day", type: "Truck", doors: 4, seats: 4, ac: true, image: ford },
-    { id: 6, name: "Nisaan", price: "$120 / Day", type: "Van", doors: 3, seats: 2, ac: true, image: nisaan },
+    { id: 1, name: "BMW", price: "Rs.70,000 / Day", type: "Sedan", doors: 4, seats: 4, ac: true, image: BMW },
+    { id: 2, name: "Cadillac", price: "Rs.80.000 / Day", type: "SUV", doors: 4, seats: 5, ac: true, image: Cadillac },
+    { id: 3, name: "Lamborghini", price: "Rs.120,000 / Day", type: "Convertible", doors: 2, seats: 2, ac: true, image: Lamborghini },
+    { id: 4, name: "Jeep", price: "Rs.77,000 / Day", type: "SUV", doors: 4, seats: 6, ac: true, image: jeep },
+    { id: 5, name: "Ford", price: "Rs.89000 / Day", type: "Truck", doors: 4, seats: 4, ac: true, image: ford },
+    { id: 6, name: "Nisaan", price: "Rs.120,000 / Day", type: "Van", doors: 3, seats: 2, ac: true, image: nisaan },
   ];
 
   const filteredCars = carData.filter((car) =>

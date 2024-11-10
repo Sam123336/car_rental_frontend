@@ -16,12 +16,12 @@ function ReservationForm({ onClose }) {
   const { addRentedCar } = useContext(RentedCarsContext); // Use context to add rented car
 
   const availableCars = [
-    { name: 'BMW', imgSrc: BMW, cost: '$150/day' },
-    { name: 'Cadillac', imgSrc: Cadillac, cost: '$200/day' },
-    { name: 'Ford', imgSrc: Ford, cost: '$120/day' },
-    { name: 'Jeep', imgSrc: Jeep, cost: '$140/day' },
-    { name: 'Lamborghini', imgSrc: Lamborghini, cost: '$300/day' },
-    { name: 'Nissan', imgSrc: Nissan, cost: '$100/day' },
+    { name: 'BMW', imgSrc: BMW, cost: 'Rs.150,000/day' },
+    { name: 'Cadillac', imgSrc: Cadillac, cost: 'Rs.200,000/day' },
+    { name: 'Ford', imgSrc: Ford, cost: 'Rs.120,000/day' },
+    { name: 'Jeep', imgSrc: Jeep, cost: 'Rs.140,000/day' },
+    { name: 'Lamborghini', imgSrc: Lamborghini, cost: 'Rs.30,000/day' },
+    { name: 'Nissan', imgSrc: Nissan, cost: 'Rs.100,000/day' },
   ];
 
   const handleReserve = async (e) => {
