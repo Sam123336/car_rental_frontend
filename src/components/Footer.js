@@ -25,12 +25,13 @@ function Footer() {
             </ul>
           </div>
           
+          
           {/* Contact Information */}
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">Contact Us</h3>
-            <p className="text-gray-400">Email: info@carrental.com</p>
-            <p className="text-gray-400">Phone: +1 (555) 123-4567</p>
-            <p className="text-gray-400">Address: 123 Car St, Auto City, CA</p>
+            <p className="text-gray-400">Email: sambitghosh56@gmail.com</p>
+            <p className="text-gray-400">Phone: +91771918391</p>
+            <p className="text-gray-400">Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411</p>
           </div>
         </div>
         
