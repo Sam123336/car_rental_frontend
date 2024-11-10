@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import CarCard from "./CarCard";
 import BMW from "./images/BMW.png";
 import Cadillac from "./images/cadalic.png";
-import Lamborghini from "./images/Lamborghini.png"; //
+import Lamborghini from "./images/Lamborghini.png";
 import jeep from "./images/jeep.png";
 import ford from "./images/ford.png";
 import nisaan from "./images/nisaan.png";
+import ToyotaCamry from "./images/toyota.png";
+import HyundaiElantra from "./images/Hyundai.png";
+import AudiA6 from "./images/Audi.png";
+import ToyotaFortuner from "./images/fortuner.png";
 
 function FeaturedCars() {
   const cars = [
@@ -14,10 +19,10 @@ function FeaturedCars() {
     { name: "Jeep", price: "Rs.77,000/day", image: jeep, description: "Rugged and reliable, perfect for off-road adventures." },
     { name: "Ford", price: "Rs.89,000/day", image: ford, description: "A powerful car with modern features." },
     { name: "Dodge", price: "Rs.99,000/day", image: nisaan, description: "Sporty and fast with advanced safety features." },
-    { name: "BMW", price: "Rs.110,000/day", image: "https://example.com/bmw.jpg", description: "Stylish and smooth with luxury features." },
-    { name: "Audi", price: "Rs.115,000/day", image: "https://example.com/audi.jpg", description: "German engineering with powerful performance." },
-    { name: "Mercedes", price: "Rs.130,000/day", image: "https://example.com/mercedes.jpg", description: "Classy and refined, ideal for luxury travel." },
-    { name: "Tesla", price: "Rs.140,000/day", image: "https://example.com/tesla.jpg", description: "Electric and environmentally friendly." }
+    { name: "ToyotaCamry ", price: "Rs.110,000/day", image: ToyotaCamry, description: "Stylish and smooth with luxury features." },
+    { name: "Audi", price: "Rs.115,000/day", image: AudiA6, description: "German engineering with powerful performance." },
+    { name: "ToyotaFortuner", price: "Rs.130,000/day", image: ToyotaFortuner, description: "Classy and refined, ideal for luxury travel." },
+    { name: "HyundaiElantra", price: "Rs.140,000/day", image: HyundaiElantra, description: "Electric and environmentally friendly." }
   ];
 
   const initialVisibleCars = 6;

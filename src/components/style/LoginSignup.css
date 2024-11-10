@@ -1,0 +1,16 @@
+/* LoginSignup.css */
+.toggle-button {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .toggle-button-active {
+    background-color: #3b82f6;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .toggle-button-inactive {
+    background-color: #4b5563;
+    color: #d1d5db;
+  }
+  

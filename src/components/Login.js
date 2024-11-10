@@ -1,74 +1,65 @@
-// src/pages/Login.js
+// src/components/Login.js
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import './style/LoginSignup.css';
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (!email || !password) {
-      setErrorMessage("Please fill in both fields.");
-      return;
-    }
-
-    // Replace this section with actual login logic (e.g., API call)
-    if (email === "test@example.com" && password === "password123") {
-      alert("Login successful!");
-      setErrorMessage("");
-    } else {
-      setErrorMessage("Invalid email or password.");
-    }
+    console.log("Login:", email, password);
+    navigate("/");
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-900">
-      <div className="w-full max-w-md bg-gray-800 p-8 rounded shadow-lg">
-        <h2 className="text-2xl font-bold text-white text-center mb-6">Login</h2>
-
-        {errorMessage && (
-          <div className="bg-red-500 text-white text-sm rounded p-2 mb-4">
-            {errorMessage}
+    <div className="flex justify-center items-center h-screen bg-gray-800">
+      <div className="bg-gray-900 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h2 className="text-2xl font-bold text-center text-white mb-6">Login Form</h2>
+        
+        <div className="flex justify-center mb-6">
+          <button className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 px-4 rounded-l-md">Login</button>
+          <Link to="/signup" className="bg-gray-700 text-gray-300 py-2 px-4 rounded-r-md hover:bg-gray-600">
+            Signup
+          </Link>
+        </div>
+        
+        <form onSubmit={handleLogin} className="space-y-4">
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="w-full p-3 rounded-md bg-gray-800 border border-gray-600 text-gray-300 focus:outline-none focus:border-blue-500"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-3 rounded-md bg-gray-800 border border-gray-600 text-gray-300 focus:outline-none focus:border-blue-500"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <div className="text-right">
+            <a href="#" className="text-blue-400 hover:underline">Forgot password?</a>
           </div>
-        )}
-
-        <form onSubmit={handleLogin}>
-          <div className="mb-4">
-            <label className="block text-gray-300 text-sm mb-2">Email</label>
-            <input
-              type="email"
-              className="w-full p-2 border border-gray-600 bg-gray-700 text-white rounded"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-
-          <div className="mb-6">
-            <label className="block text-gray-300 text-sm mb-2">Password</label>
-            <input
-              type="password"
-              className="w-full p-2 border border-gray-600 bg-gray-700 text-white rounded"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </div>
-
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-500 transition"
+            className="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white font-bold py-2 rounded-md"
           >
-            Log In
+            Login
           </button>
         </form>
-
-        <p className="text-gray-400 text-center text-sm mt-4">
-          Don't have an account?{" "}
-          <a href="/signup" className="text-blue-400 hover:underline">
-            Sign up
-          </a>
+        
+        <p className="text-center text-gray-400 mt-4">
+          Not a member?{" "}
+          <Link to="/signup" className="text-blue-400 hover:underline">
+            Signup now
+          </Link>
         </p>
       </div>
     </div>

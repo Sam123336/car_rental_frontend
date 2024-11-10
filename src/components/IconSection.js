@@ -8,6 +8,18 @@ import jeep from "./images/jeep.png";
 import ford from "./images/ford.png";
 import nisaan from "./images/nisaan.png";
 import car from "./images/car12.png";
+import CarCard from "./CarCard";
+import BMW from "./images/BMW.png";
+import Cadillac from "./images/cadalic.png";
+import Lamborghini from "./images/Lamborghini.png";
+import jeep from "./images/jeep.png";
+import ford from "./images/ford.png";
+import nisaan from "./images/nisaan.png";
+import ToyotaCamry from "./images/toyota.png";
+import HyundaiElantra from "./images/Hyundai.png";
+import AudiA6 from "./images/Audi.png";
+import ToyotaFortuner from "./images/fortuner.png";
+
 
 function IconSection() {
   const brands = [
@@ -17,14 +29,14 @@ function IconSection() {
     { name: 'Brand 4', image: car},
     { name: 'Brand 2', image: Cadillac },
     { name: 'Brand 3', image: Lamborghini },
-    { name: 'Brand 4', image: car},
+  
     { name: 'Brand 2', image: Cadillac },
     { name: 'Brand 3', image: Lamborghini },
     { name: 'Brand 4', image: car},
     { name: 'Brand 2', image: Cadillac },
-    { name: 'Brand 3', image: Lamborghini },
+  
     { name: 'Brand 4', image: car},
-    { name: 'Brand 2', image: Cadillac },
+ 
     { name: 'Brand 3', image: Lamborghini },
     { name: 'Brand 4', image: car},
    
