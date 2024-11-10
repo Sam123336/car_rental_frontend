@@ -24,11 +24,11 @@ function CarListPage() {
     { id: 5, name: "Ford", price: "$89 / Day", type: "Truck", doors: 4, seats: 4, ac: true, image: ford },
     { id: 6, name: "Nisaan", price: "$120 / Day", type: "Van", doors: 3, seats: 2, ac: true, image: nisaan },
   ];
-  
+
   const filteredCars = carData.filter((car) =>
     car.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  
+
   return (
     <div className="container mx-auto p-4">
       <div className="mb-4">
@@ -40,7 +40,7 @@ function CarListPage() {
           className="w-full p-2 border border-gray-600 rounded-lg bg-gray-800 text-white placeholder-gray-400"
         />
       </div>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {filteredCars.map((car) => (
           <CarCard key={car.id} car={car} />
         ))}
